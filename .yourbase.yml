@@ -1,5 +1,5 @@
 build_targets:
-- commands:
+  commands:
   - chmod +x yourbased.sh
   - sh ./yourbased.sh
   container:
