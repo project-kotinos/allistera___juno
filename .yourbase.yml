@@ -1,14 +1,14 @@
 build_targets:
+- name: default
   commands:
-  - chmod +x yourbased.sh
-  - sh ./yourbased.sh
+    - chmod +x yourbased.sh
+    - sh ./yourbased.sh
   container:
     image: yourbase/yb_ubuntu:16.04
-  name: default
 ci:
   builds:
   - build_target: default
-    name: default
+    name: default    
 dependencies:
   build:
   - ruby:2.4.0
